@@ -18,6 +18,11 @@ const skillsData = [
   { name: "Python", experience: "1 Years Experience" },
   { name: "Selenium", experience: "1 Years Experience" },
   { name: "Flask", experience: "1 Years Experience" },
+  { name: "MongoDB", experience: "1 Years Experience" },
+  { name: "SQL", experience: "1 Years Experience" },
+  { name: "MySQL", experience: "1 Years Experience" },
+  { name: "PostgreSQL", experience: "1 Years Experience" },
+  { name: "Docker", experience: "1 Years Experience" },
 ];
 
 const Skills = () => {
