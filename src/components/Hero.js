@@ -20,8 +20,8 @@ const Hero = () => {
               <span className="hero__name">Aytekin Kaplan</span>.
             </h1>
             <p className="hero__description lead mb-4">
-              Based in the UK, I'm a front-end developer passionate about
-              building accessible web apps that users love.
+              Based in Turkey, I'm a software developer and QA engineer
+              passionate about building accessible web apps that users love.
             </p>
             <Button
               variant="outline-light"
