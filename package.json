@@ -1,7 +1,7 @@
 {
   "name": "kaplan",
   "version": "0.1.0",
-  "homepage": "https://kaplan-webdev.github.io/kaplan/",
+  "homepage": "https://kaplan-webdev.github.io/kaplan",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
