@@ -3,12 +3,21 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./Skills.css";
 
 const skillsData = [
-  { name: "HTML", experience: "4 Years Experience" },
-  { name: "CSS", experience: "4 Years Experience" },
-  { name: "JavaScript", experience: "4 Years Experience" },
-  { name: "Accessibility", experience: "4 Years Experience" },
-  { name: "React", experience: "3 Years Experience" },
-  { name: "Sass", experience: "3 Years Experience" },
+  { name: "HTML", experience: "1 Years Experience" },
+  { name: "CSS", experience: "1 Years Experience" },
+  { name: "JavaScript", experience: "1 Years Experience" },
+  { name: "Accessibility", experience: "1 Years Experience" },
+  { name: "React", experience: "1 Years Experience" },
+  { name: "Node.js", experience: "1 Years Experience" },
+  { name: "Express.js", experience: "1 Years Experience" },
+  { name: "Sass", experience: "1 Years Experience" },
+  { name: "Bootstrap", experience: "1 Years Experience" },
+  { name: "Git", experience: "1 Years Experience" },
+  { name: "GitHub", experience: "1 Years Experience" },
+  { name: "Java", experience: "1 Years Experience" },
+  { name: "Python", experience: "1 Years Experience" },
+  { name: "Selenium", experience: "1 Years Experience" },
+  { name: "Flask", experience: "1 Years Experience" },
 ];
 
 const Skills = () => {
