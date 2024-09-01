@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Aytekin Kaplan's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+
+This project is a personal portfolio website for Aytekin Kaplan, a front-end developer based in the UK. It showcases Aytekin's skills, projects, and provides a way for potential clients or employers to get in touch.
+
+## Features
+
+- **Responsive Design**: The website is fully responsive, ensuring a seamless experience across all device sizes.
+- **Modern UI**: Utilizes a sleek, dark-themed interface with accent colors for a professional look.
+- **Project Showcase**: Highlights six key projects with descriptions and links to live sites and source code.
+- **Skills Section**: Displays Aytekin's technical skills and years of experience.
+- **Contact Form**: Allows visitors to easily get in touch with Aytekin.
+- **Social Media Integration**: Links to Aytekin's professional profiles on various platforms.
+
+## Technologies Used
+
+- **React**: The project is built using React, bootstrapped with Create React App.
+- **React Bootstrap**: For responsive layout and pre-styled components.
+- **CSS3**: Custom styling to achieve the desired look and feel.
+- **GitHub Actions**: For continuous integration and deployment to GitHub Pages.
+
+## Project Structure
+
+- `src/components/`: Contains all React components (Header, Hero, Skills, Projects, Contact, Footer).
+- `src/assets/`: Stores images and icons used throughout the site.
+- `src/styles/`: Houses custom CSS files for styling components.
+
+## Setup and Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/aytekinkaplan/kaplan.git
+   ```
+2. Navigate to the project directory:
+   ```
+   cd kaplan
+   ```
+3. Install dependencies:
+   ```
+   npm install
+   ```
+4. Start the development server:
+   ```
+   npm start
+   ```
 
 ## Available Scripts
 
-In the project directory, you can run:
+- `npm start`: Runs the app in development mode.
+- `npm test`: Launches the test runner.
+- `npm run build`: Builds the app for production.
+- `npm run deploy`: Deploys the built app to GitHub Pages.
 
-### `npm start`
+## Deployment
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project is set up to automatically deploy to GitHub Pages when changes are pushed to the main branch. The deployment process is handled by a GitHub Actions workflow defined in `.github/workflows/deploy.yml`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Customization
 
-### `npm test`
+To customize this portfolio for your own use:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Update personal information in relevant components.
+2. Replace project details in the `Projects` component.
+3. Modify skills in the `Skills` component.
+4. Update social media links in the `Header` and `Footer` components.
 
-### `npm run build`
+## Contributing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+While this is a personal portfolio project, suggestions and feedback are welcome. Please open an issue to discuss potential changes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## License
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project is open source and available under the [MIT License](LICENSE).
 
-### `npm run eject`
+## Contact
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Aytekin Kaplan - [LinkedIn](https://www.linkedin.com/in/aytekinkaplan/) - [GitHub](https://github.com/aytekinkaplan)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Project Link: [https://github.com/aytekinkaplan/kaplan](https://github.com/aytekinkaplan/kaplan)
