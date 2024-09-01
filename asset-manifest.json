@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kaplan/static/css/main.ff32c9ae.css",
+    "main.js": "/kaplan/static/js/main.91f629c2.js",
+    "index.html": "/kaplan/index.html",
+    "main.ff32c9ae.css.map": "/kaplan/static/css/main.ff32c9ae.css.map",
+    "main.91f629c2.js.map": "/kaplan/static/js/main.91f629c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff32c9ae.css",
+    "static/js/main.91f629c2.js"
+  ]
+}
