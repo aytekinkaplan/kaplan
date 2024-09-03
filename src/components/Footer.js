@@ -26,6 +26,15 @@ const Footer = () => {
     },
   ];
 
+  const handleImageError = (e, imageSrc) => {
+    console.error(`Error loading image: ${imageSrc}`);
+    e.target.src = `${process.env.PUBLIC_URL}/assets/images/placeholder-icon.svg`;
+  };
+
+  const handleImageLoad = (imageSrc) => {
+    console.log(`Image loaded successfully: ${imageSrc}`);
+  };
+
   return (
     <footer className="footer bg-less-dark text-white py-4">
       <Container>
@@ -46,13 +55,8 @@ const Footer = () => {
                   alt={link.alt}
                   width="25"
                   height="24"
-                  onError={(e) => {
-                    console.error(`Error loading image: ${link.icon}`);
-                    e.target.src = `${process.env.PUBLIC_URL}/assets/images/placeholder-icon.svg`;
-                  }}
-                  onLoad={() =>
-                    console.log(`Image loaded successfully: ${link.icon}`)
-                  }
+                  onError={(e) => handleImageError(e, link.icon)}
+                  onLoad={() => handleImageLoad(link.icon)}
                 />
               </Nav.Link>
             ))}

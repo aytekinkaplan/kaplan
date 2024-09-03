@@ -1,13 +1,23 @@
 import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { useForm, ValidationError } from "@formspree/react";
+import "./Contact.css";
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("xyzgveby");
 
+  const handleImageError = (e, imageSrc) => {
+    console.error(`Error loading image: ${imageSrc}`);
+    e.target.src = `${process.env.PUBLIC_URL}/assets/images/placeholder-image.jpg`;
+  };
+
+  const handleImageLoad = (imageSrc) => {
+    console.log(`Image loaded successfully: ${imageSrc}`);
+  };
+
   if (state.succeeded) {
     return (
-      <section id="contact" className="contact py-5">
+      <section id="contact" className="contact py-5 position-relative">
         <Container>
           <Row className="justify-content-center">
             <Col lg={6} className="text-center">
@@ -19,12 +29,20 @@ const Contact = () => {
             </Col>
           </Row>
         </Container>
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/images/pattern-rings.svg`}
+          alt=""
+          className="contact__rings position-absolute"
+          style={{ left: 0, bottom: 0 }}
+          onError={(e) => handleImageError(e, "pattern-rings.svg")}
+          onLoad={() => handleImageLoad("pattern-rings.svg")}
+        />
       </section>
     );
   }
 
   return (
-    <section id="contact" className="contact py-5">
+    <section id="contact" className="contact py-5 position-relative">
       <Container>
         <Row className="justify-content-between">
           <Col lg={5}>
@@ -93,6 +111,14 @@ const Contact = () => {
           </Col>
         </Row>
       </Container>
+      <img
+        src={`${process.env.PUBLIC_URL}/assets/images/pattern-rings.svg`}
+        alt=""
+        className="contact__rings position-absolute"
+        style={{ left: 0, bottom: 0 }}
+        onError={(e) => handleImageError(e, "pattern-rings.svg")}
+        onLoad={() => handleImageLoad("pattern-rings.svg")}
+      />
     </section>
   );
 };

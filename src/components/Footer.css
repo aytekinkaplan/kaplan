@@ -1,11 +1,12 @@
 .footer {
-  max-width: 69.375rem;
-  margin: 0 auto;
-  padding: 40px 0;
+  width: 100%;
   background-color: var(--bg-body);
+  padding: 40px 0;
 }
 
 .footer__content {
+  max-width: 69.375rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
