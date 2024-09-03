@@ -26,6 +26,15 @@ const skillsData = [
 ];
 
 const Skills = () => {
+  const handleImageError = (e, imageSrc) => {
+    console.error(`Error loading image: ${imageSrc}`);
+    e.target.src = `${process.env.PUBLIC_URL}/assets/images/placeholder-image.jpg`;
+  };
+
+  const handleImageLoad = (imageSrc) => {
+    console.log(`Image loaded successfully: ${imageSrc}`);
+  };
+
   return (
     <section className="skills bg-dark text-white py-5 position-relative">
       <Container>
@@ -41,9 +50,11 @@ const Skills = () => {
         </Row>
       </Container>
       <img
-        src="assets/images/pattern-rings.svg"
+        src={`${process.env.PUBLIC_URL}/assets/images/pattern-rings.svg`}
         alt=""
         className="skills__rings position-absolute"
+        onError={(e) => handleImageError(e, "pattern-rings.svg")}
+        onLoad={() => handleImageLoad("pattern-rings.svg")}
       />
     </section>
   );

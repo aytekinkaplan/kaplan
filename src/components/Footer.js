@@ -3,6 +3,29 @@ import { Container, Nav } from "react-bootstrap";
 import "./Footer.css";
 
 const Footer = () => {
+  const socialLinks = [
+    {
+      href: "https://github.com/aytekinkaplan",
+      icon: "icon-github.svg",
+      alt: "GitHub",
+    },
+    {
+      href: "https://aytekinkaplan.github.io/my-resume/",
+      icon: "icon-frontend-mentor.svg",
+      alt: "Frontend Mentor",
+    },
+    {
+      href: "https://www.linkedin.com/in/aytekinkaplan/",
+      icon: "icon-linkedin.svg",
+      alt: "LinkedIn",
+    },
+    {
+      href: "https://x.com/ytknkpln",
+      icon: "icon-twitter.svg",
+      alt: "Twitter",
+    },
+  ];
+
   return (
     <footer className="footer bg-less-dark text-white py-4">
       <Container>
@@ -11,54 +34,28 @@ const Footer = () => {
             aytekinkaplan
           </a>
           <Nav className="footer__nav">
-            <Nav.Link
-              href="https://github.com/aytekinkaplan"
-              target="_blank"
-              className="footer__social"
-            >
-              <img
-                src="assets/images/icon-github.svg"
-                alt="GitHub"
-                width="25"
-                height="24"
-              />
-            </Nav.Link>
-            <Nav.Link
-              href="https://aytekinkaplan.github.io/my-resume/"
-              target="_blank"
-              className="footer__social"
-            >
-              <img
-                src="assets/images/icon-frontend-mentor.svg"
-                alt="Frontend Mentor"
-                width="26"
-                height="23"
-              />
-            </Nav.Link>
-            <Nav.Link
-              href="https://www.linkedin.com/in/aytekinkaplan/"
-              target="_blank"
-              className="footer__social"
-            >
-              <img
-                src="assets/images/icon-linkedin.svg"
-                alt="LinkedIn"
-                width="25"
-                height="24"
-              />
-            </Nav.Link>
-            <Nav.Link
-              href="https://x.com/ytknkpln"
-              target="_blank"
-              className="footer__social"
-            >
-              <img
-                src="assets/images/icon-twitter.svg"
-                alt="Twitter"
-                width="24"
-                height="20"
-              />
-            </Nav.Link>
+            {socialLinks.map((link, index) => (
+              <Nav.Link
+                key={index}
+                href={link.href}
+                target="_blank"
+                className="footer__social"
+              >
+                <img
+                  src={`${process.env.PUBLIC_URL}/assets/images/${link.icon}`}
+                  alt={link.alt}
+                  width="25"
+                  height="24"
+                  onError={(e) => {
+                    console.error(`Error loading image: ${link.icon}`);
+                    e.target.src = `${process.env.PUBLIC_URL}/assets/images/placeholder-icon.svg`;
+                  }}
+                  onLoad={() =>
+                    console.log(`Image loaded successfully: ${link.icon}`)
+                  }
+                />
+              </Nav.Link>
+            ))}
           </Nav>
         </div>
       </Container>

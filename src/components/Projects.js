@@ -5,32 +5,32 @@ import "./Projects.css";
 const projectsData = [
   {
     name: "Design Portfolio",
-    image: "assets/images/thumbnail-project-1-large.webp",
+    image: "/assets/images/thumbnail-project-1-large.webp",
     technologies: ["HTML", "CSS"],
   },
   {
     name: "E-learning Landing Page",
-    image: "assets/images/thumbnail-project-2-large.webp",
+    image: "/assets/images/thumbnail-project-2-large.webp",
     technologies: ["HTML", "CSS"],
   },
   {
     name: "Todo Web App",
-    image: "assets/images/thumbnail-project-3-large.webp",
+    image: "/assets/images/thumbnail-project-3-large.webp",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
     name: "Entertainment Web App",
-    image: "assets/images/thumbnail-project-4-large.webp",
+    image: "/assets/images/thumbnail-project-4-large.webp",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
     name: "Memory Game",
-    image: "assets/images/thumbnail-project-5-large.webp",
+    image: "/assets/images/thumbnail-project-5-large.webp",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
   {
     name: "Art Gallery Showcase",
-    image: "assets/images/thumbnail-project-6-large.webp",
+    image: "/assets/images/thumbnail-project-6-large.webp",
     technologies: ["HTML", "CSS", "JavaScript"],
   },
 ];
@@ -55,9 +55,18 @@ const Projects = () => {
               <div className="projects__item">
                 <div className="projects__picture position-relative">
                   <img
-                    src={project.image}
+                    src={process.env.PUBLIC_URL + project.image}
                     alt={project.name}
                     className="img-fluid"
+                    onError={(e) => {
+                      console.error(`Error loading image: ${project.image}`);
+                      e.target.src =
+                        process.env.PUBLIC_URL +
+                        "/assets/images/placeholder-image.jpg";
+                    }}
+                    onLoad={() =>
+                      console.log(`Image loaded successfully: ${project.image}`)
+                    }
                   />
                   <div className="projects__overlay d-flex justify-content-center align-items-center">
                     <Button variant="outline-light" className="me-3">
