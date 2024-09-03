@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/kaplan/static/css/main.ff32c9ae.css",
-    "main.js": "/kaplan/static/js/main.0e7c6c0a.js",
+    "main.css": "/kaplan/static/css/main.ab410e3d.css",
+    "main.js": "/kaplan/static/js/main.78828db4.js",
     "index.html": "/kaplan/index.html",
-    "main.ff32c9ae.css.map": "/kaplan/static/css/main.ff32c9ae.css.map",
-    "main.0e7c6c0a.js.map": "/kaplan/static/js/main.0e7c6c0a.js.map"
+    "main.ab410e3d.css.map": "/kaplan/static/css/main.ab410e3d.css.map",
+    "main.78828db4.js.map": "/kaplan/static/js/main.78828db4.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff32c9ae.css",
-    "static/js/main.0e7c6c0a.js"
+    "static/css/main.ab410e3d.css",
+    "static/js/main.78828db4.js"
   ]
 }
